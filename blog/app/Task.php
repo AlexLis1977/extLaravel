@@ -1,11 +1,7 @@
 <?php
-
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
-
-class Task extends Model
-{
+class Task extends Model{
     /**
    * Массово присваиваемые атрибуты.
    *
@@ -15,8 +11,7 @@ class Task extends Model
   /**
    * Получить пользователя - владельца данной задачи
    */
-  public function user()
-  {
+  public function user()  {
     return $this->belongsTo(User::class);
   }
 }
