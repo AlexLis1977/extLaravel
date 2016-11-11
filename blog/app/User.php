@@ -1,9 +1,7 @@
 <?php
 
 namespace App;
-
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
 class User extends Authenticatable
 {
     /**
@@ -26,8 +24,7 @@ class User extends Authenticatable
     /**
    * Получить все задачи пользователя.
    */
-  public function tasks()
-  {
+  public function tasks()  {
     return $this->hasMany(Task::class);
   }
 }
